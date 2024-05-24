@@ -1,0 +1,4 @@
+FROM openjdk:17
+EXPOSE 8081
+ADD /target/crud-simple-0.0.1-SNAPSHOT.jar crud-simple-0.0.1-SNAPSHOT.jar
+ENTRYPOINT ["java", "-jar","crud-simple-0.0.1-SNAPSHOT.jar"]
